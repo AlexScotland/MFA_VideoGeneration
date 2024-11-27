@@ -1,13 +1,5 @@
-# Sample Package
-This is a sample package to help you make more API endpoints without modifying existing code
+# Video Generation
+This is a plugin for [ModularFastAPI](https://github.com/AlexScotland/ModularFastAPI) for standalone video generation
 
-## Folder Structure
-This is an example folder structure
-```
-> package_name
-    > models
-        > model.py
-    > routers # <- Necessary
-        > router1.py
-        > router2.py
-```
+## API Endpoints
+TBD

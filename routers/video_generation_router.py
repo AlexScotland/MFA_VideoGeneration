@@ -1,21 +1,23 @@
 """
-Sample Package for API router
+Video Generation for ModularFastAPI
 Alex Scotland, 2024
-
-This file goes over the setup of a fastapi plugin.
 """
 # Imports the base necessities
 from fastapi import Response, APIRouter
 
 # Assign the API Router to variable ROUTER.
 # This is necessary - as in `src.routers.__init__.py` we look for `.ROUTER`
+
+PREFIX = "/video"
 ROUTER = APIRouter(
-    prefix="/sample",
-    tags=["This is a sample PackageRouter"]
+    prefix = PREFIX,
+    tags=[
+        "Text To Image To Video",
+        "Text To Video"]
 )
 
 
 # Build your api end points as you would!
-@ROUTER.get("/test/")
-def test():
+@ROUTER.get("/generate/")
+def generate_video():
     return Response("Hello")
